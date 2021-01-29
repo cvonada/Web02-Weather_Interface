@@ -10,81 +10,120 @@
 
 <body>
 
-    <h1>Web II: Weather Interface</h1>
-    <h2>by Courtney Vonada</h2>
+    <h1 class="text-center">Web II: Weather Interface</h1>
+    <h2 class="text-center">by Courtney Vonada</h2>
 
-    <div id='dailytemperature'>
-        <h2>Today:</h2>
-            <div class="icon cloudy">
-                <div class="cloud"></div>
-                <div class="cloud"></div>
+    <div id="weathermodule" class='flex-center'>
+        <div id='weathermodule-constrained' class="flex-center">
+            <div id='current-forecast'> 
+                <h2>Current Forecast</h2>
+                <div id='current-temp' class="flex-center">
+                    <div id="current-temp-graphic" class="flex-center">
+                        <div class="icon icon-large cloudy">
+                            <div class="cloud"></div>
+                            <div class="cloud"></div>
+                        </div>
+                        <div id="current-temp-graphic-text" class="flex-center">
+                            <h1 class="font-large">30° F</h1>
+                        </div>
+                    </div> 
+                    <div id='current-temp-text'>  
+                        <div id='dailytext'>
+                            <p>Insert Words Here...</p>
+                        </div>
+                    </div> 
+                </div>
             </div>
+
+            <!-- 7 Day Forecast -->
+
+            <h2 class="text-center">7 Day Forecast</h2>
+
+            <div class="screen">
+            
+                <div class='container'>
+                    <div id='Sunday'> <h3>Sunday</h3>
+                        <div class="icon icon-small sun-shower">
+                            <div class="cloud"></div>
+                            <div class="sun">
+                                <div class="rays"></div>
+                            </div>
+                            <div class="rain"></div>
+                        </div>
+                        <h3>30° F</h3>
+                    </div>
+                </div>
+
+                <div class='container'>
+                    <div id='monday'> <h3>Monday</h3>
+                        <div class="icon icon-small thunder-storm">
+                            <div class="cloud"></div>
+                            <div class="lightning">
+                                <div class="bolt"></div>
+                                <div class="bolt"></div>
+                            </div>
+                        </div>
+                        <h3>30° F</h3>
+                    </div>
+                </div>
+
+                <div class='container'>
+                    <div id='tuesday'> <h3>Tuesday</h3>
+                        <div class="icon icon-small cloudy">
+                            <div class="cloud"></div>
+                            <div class="cloud"></div>
+                        </div>
+                        <h3>30° F</h3>
+                    </div>
+                </div> 
+
+                <div class='container'>  
+                    <div id='wednesday'> <h3>Wednesday</h3> 
+                        <div class="icon icon-small flurries">
+                            <div class="cloud"></div>
+                            <div class="snow">
+                                <div class="flake"></div>
+                                <div class="flake"></div>
+                            </div>
+                        </div>
+                        <h3>30° F</h3>
+                    </div>
+                </div>
+
+                <div class='container'>
+                    <div id='thursday'> <h3>Thursday</h3> 
+                        <div class="icon icon-small sunny">
+                            <div class="sun">
+                                <div class="rays"></div>
+                            </div>
+                        </div>
+                        <h3>30° F</h3>
+                    </div>
+                </div>  
+                
+                <div class='container'>
+                    <div id='friday'> <h3>Friday</h3> 
+                        <div class="icon icon-small sunny">
+                            <div class="sun">
+                                <div class="rays"></div>
+                            </div>
+                        </div>
+                        <h3>30° F</h3>
+                    </div>
+                </div>   
+
+                <div class='container'>
+                    <div id='saturday'> <h3>Saturday</h3> 
+                        <div class="icon icon-small rainy">
+                            <div class="cloud"></div>
+                            <div class="rain"></div>
+                        </div>
+                        <h3>30° F</h3>
+                    </div>
+                </div> 
+            </div>    
+        </div>
     </div>
-
-    <h2>7 Day Forecast</h2>
-    <div class="screen">
-    
-        <div class='container'>
-            <div class="icon sun-shower">
-                <div class="cloud"></div>
-                <div class="sun">
-                    <div class="rays"></div>
-                </div>
-                <div class="rain"></div>
-            </div>
-        </div>
-
-        <div class='container'>
-            <div class="icon thunder-storm">
-                <div class="cloud"></div>
-                <div class="lightning">
-                    <div class="bolt"></div>
-                    <div class="bolt"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class='container'>
-            <div class="icon cloudy">
-                <div class="cloud"></div>
-                <div class="cloud"></div>
-            </div>
-        </div> 
-
-        <div class='container'>   
-            <div class="icon flurries">
-                <div class="cloud"></div>
-                <div class="snow">
-                    <div class="flake"></div>
-                    <div class="flake"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class='container'>
-            <div class="icon sunny">
-                <div class="sun">
-                    <div class="rays"></div>
-                </div>
-            </div>
-        </div>  
-        
-        <div class='container'>
-            <div class="icon sunny">
-                <div class="sun">
-                    <div class="rays"></div>
-                </div>
-            </div>
-        </div>   
-
-        <div class='container'>
-            <div class="icon rainy">
-                <div class="cloud"></div>
-                <div class="rain"></div>
-            </div>
-        </div> 
-    </div>    
-
     <script src="script.js"></script> 
 </body>
 

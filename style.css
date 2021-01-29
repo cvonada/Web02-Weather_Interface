@@ -10,7 +10,6 @@ body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   justify-content: center;
-  text-align: center;
 }
 
 h1 {
@@ -24,15 +23,70 @@ h2 {
     color: #fff;
     font-weight: 100;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 1%;
   }
 
-#dailytemperature {
+h3 {
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0px; 
+}
+
+p {
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0px; 
+}
+
+.font-large {
+    font-size: 50px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+
+#weathermodule-constrained {
+    flex-direction: column;
+}
+
+#current-forecast {
+    width: 100%;
+}
+
+#current-temp {
     padding: 5px;
-    border-radius: 10%;
+    border-radius: 25px;
     border-style: solid;
     border-width: 5px;
     border-color: white;
+    background-color: currentColor;
+    height: 300px;
+    margin: 0px 5px 0px 5px
+}
+
+#current-temp-graphic {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#current-temp-text {
+    height: 100%;
+    width: 100%;
+}
+
+#dailytext {
+    height: 30%;
+    width: 30%;
+    padding: 5px;
     background-color: currentColor;
 }
 
@@ -43,13 +97,14 @@ h2 {
 }
 
 .container {
-    width: 120px;
-    height: 120px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 10%;
     border-style: solid;
     border-width: 5px;
     border-color: white;
     background-color: currentColor;
+    text-align: center;
 }
 
 .icon {
@@ -57,7 +112,14 @@ h2 {
   display: inline-block;
   width: 12em;
   height: 10em;
-  font-size: 50%; /* control icon size here */
+}
+
+.icon-large {
+    font-size: 20px; /* control icon size here */
+}
+
+.icon-small {
+    font-size: 50%; /* control icon size here */
 }
 
 .cloud {
