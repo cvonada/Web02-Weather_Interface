@@ -5,6 +5,7 @@ const lat = '40.659019',
     url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${api}&units=${unit}`;
 
 function updateUI(data) {
+    document.querySelector('#current').innerHTML = `${Math.round(data.current.temp)}˚F`;
     console.log(data);
 }
 
